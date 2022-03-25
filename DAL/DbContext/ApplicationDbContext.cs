@@ -11,6 +11,7 @@ namespace DAL.DbContext
         {
             Database.EnsureCreated();
         }
+        public DbSet<Topic> Topics { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
