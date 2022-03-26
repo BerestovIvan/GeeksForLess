@@ -75,7 +75,7 @@ namespace BLL.Services
             }
             else
             {
-                topic = await topicRepository.Update(topic);
+                topic = await topicRepository.Update(mapper.Map<Topic>(topicModel));
                 return mapper.Map<TopicModel>(topic);
             }
         }

@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 
 namespace GeeksForLess.Controllers
 {
+    [Route("[controller]")]
     public class AuthenticateController : Controller
     {
         readonly IUserService userService;
