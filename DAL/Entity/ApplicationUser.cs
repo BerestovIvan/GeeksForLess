@@ -8,5 +8,7 @@ namespace DAL.Entity
     {
         [NotMapped]
         public string Password { get; set; }
+        public ICollection<Comment> CreatedComments { get; set; }
+        public ICollection<Article> CreatedArticles { get; set; }
     }
 }

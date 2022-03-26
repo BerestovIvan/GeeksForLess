@@ -10,5 +10,6 @@ namespace DAL.Entity
     {
         public Guid Id { get; set; }
         public string Title { get; set; }
+        public ICollection<Article> Articles { get; set; }
     }
 }
